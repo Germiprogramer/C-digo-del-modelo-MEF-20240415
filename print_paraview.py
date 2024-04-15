@@ -125,3 +125,16 @@ def print_paraview_micro_stra_stre_disp (v_tetra, stra, stre, disp, lablet, lab)
     f.close()
 
     return;
+
+import numpy as np
+
+# Simular vértices de una malla tetraédrica
+v_tetra = np.random.rand(24).tolist()  # Supongamos que tenemos 8 puntos (24 coordenadas)
+
+# Simular deformaciones, tensiones y desplazamientos para 8 puntos
+stra = np.random.rand(24).tolist()  # Cada punto tiene una deformación en x, y, z
+stre = np.random.rand(24).tolist()  # Cada punto tiene una tensión en x, y, z
+disp = np.random.rand(24).tolist()  # Cada punto tiene un desplazamiento en x, y, z
+
+# Llamar a la función para escribir el archivo VTK
+print_paraview_micro_stra_stre_disp(v_tetra, stra, stre, disp, 'Simulation_', 'Test1')
