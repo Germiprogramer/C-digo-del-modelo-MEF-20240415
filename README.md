@@ -1,0 +1,1 @@
+Se ha creado una función que te crea vtu de cubos de coordenadas al azar. La idea es crear una IA que, en base a las dimensiones de una determinada figura, te diga si su volumen total es mayor o menos que un volumen determinado.
